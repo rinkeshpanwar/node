@@ -1,4 +1,4 @@
-import { r as registerInstance, h, a as Host } from './index-ffa88d01.js';
+import { r as registerInstance, h, a as Host } from './index-6c384454.js';
 
 class $e8379818650e2442$export$93654d4f2d6cd524 {
     constructor(){
@@ -10273,7 +10273,7 @@ class $1e0aff16be2c328e$export$d72c7bf8eef50853 extends (0, $416260bce337df90$ex
 
 var $dd0187d7f28e386f$export$2e2bcd8739ae039 = (0, $416260bce337df90$export$ecd1fc136c422448);
 
-const callUserCss = ":host{display:block}";
+const callUserCss = ":host{display:block}.flyer-video-container{display:flex;height:100vh;width:100%;flex-wrap:wrap;position:relative}.flyer-host-video,.flyer-reciever-video{width:100%;min-width:10vw;height:100%;min-height:10vh;position:absolute;background:gray;border-radius:1vh}.flyer-reciever-video{position:absolute;display:none}";
 
 const CallUser = class {
     constructor(hostRef) {
@@ -10327,6 +10327,15 @@ const CallUser = class {
         }
         if (this.assignvIT && this.remoteStreamObject) {
             this.callerVideo.srcObject = this.remoteStreamObject;
+            this.callerVideo.style.display = "block";
+            this.callerVideo.style.background = "blue";
+            this.myVideo.style.height = "20vh";
+            this.myVideo.style.width = "18vw";
+            this.myVideo.style.zIndex = 1;
+            this.myVideo.style.bottom = "10vh";
+            this.myVideo.style.background = "red";
+            this.myVideo.style.right = "20px";
+            this.myVideo.style.border = "2px solid lightcyan";
             this.assignvIT = false;
         }
     }
@@ -10339,7 +10348,7 @@ const CallUser = class {
         }
         return (h(Host, null, "connection Established your username is ", this.userNameProps, h("div", null, this.userNameProps), this.isCallConnected == false ?
             this.isCallUser ? h("div", null, h("input", { type: 'text', ref: e => this.callerRef = e }), h("button", { onClick: () => this.callUser() }, "Connect")) :
-                h("div", null, h("button", { onClick: () => this.isCallUser = true }, "Connect with other")) : "", h("video", { ref: e => this.myVideo = e, autoPlay: true, controls: true, muted: true, width: 510, height: 510 }), h("video", { ref: e => this.callerVideo = e, autoplay: true, controls: true, muted: true, width: 510, height: 510 })));
+                h("div", null, h("button", { onClick: () => this.isCallUser = true }, "Connect with other")) : "", h("div", { class: "flyer-video-container" }, h("video", { class: "flyer-host-video", ref: e => this.myVideo = e, autoPlay: true, controls: true, muted: true, width: 510, height: 510 }), h("video", { class: "flyer-reciever-video", ref: e => this.callerVideo = e, autoplay: true, controls: true, muted: true, width: 510, height: 510 }))));
     }
 };
 CallUser.style = callUserCss;

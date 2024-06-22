@@ -1,20 +1,13 @@
-import { r as registerInstance, h } from './index-ffa88d01.js';
-import { f as format } from './utils-11fcde98.js';
+import { r as registerInstance, h } from './index-6c384454.js';
 
 const myComponentCss = ":host{display:block}";
 
 const MyComponent = class {
     constructor(hostRef) {
         registerInstance(this, hostRef);
-        this.first = undefined;
-        this.middle = undefined;
-        this.last = undefined;
-    }
-    getText() {
-        return format(this.first, this.middle, this.last);
     }
     render() {
-        return h("div", { key: '0d481e58fc31ee585bc7ad60794afa8a7c29064b' }, h("home-page", { key: 'f580be7806b55d0f5aa1806c6a563146bdb00ec7' }));
+        return h("div", { key: '4205af9d73aa81f9727a4b1eeb25940c00552bd1' }, h("home-page", { key: '4b6d10b20e3b470041d0116c7a0fe15e98ab5456' }));
     }
 };
 MyComponent.style = myComponentCss;

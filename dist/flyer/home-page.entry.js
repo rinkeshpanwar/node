@@ -1,4 +1,4 @@
-import { r as registerInstance, h, a as Host } from './index-ffa88d01.js';
+import { r as registerInstance, h, a as Host } from './index-6c384454.js';
 
 const homePageCss = ":host{display:block}";
 

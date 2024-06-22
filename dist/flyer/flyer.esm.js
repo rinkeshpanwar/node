@@ -1,5 +1,5 @@
-import { B as BUILD, c as consoleDevInfo, H, d as doc, N as NAMESPACE, p as promiseResolve, b as bootstrapLazy } from './index-ffa88d01.js';
-export { s as setNonce } from './index-ffa88d01.js';
+import { B as BUILD, c as consoleDevInfo, H, d as doc, N as NAMESPACE, p as promiseResolve, b as bootstrapLazy } from './index-6c384454.js';
+export { s as setNonce } from './index-6c384454.js';
 import { g as globalScripts } from './app-globals-0f993ce5.js';
 
 /*
@@ -47,7 +47,7 @@ const patchCloneNodeFix = (HTMLElementPrototype) => {
 
 patchBrowser().then(async (options) => {
   await globalScripts();
-  return bootstrapLazy([["call-user",[[0,"call-user",{"userNameProps":[8,"user-name-props"],"isCallUser":[32],"isLoading":[32],"isError":[32],"isCallConnected":[32]}]]],["home-page",[[1,"home-page",{"userName":[32]}]]],["my-component",[[1,"my-component",{"first":[1],"middle":[1],"last":[1]}]]]], options);
+  return bootstrapLazy([["call-user",[[0,"call-user",{"userNameProps":[8,"user-name-props"],"isCallUser":[32],"isLoading":[32],"isError":[32],"isCallConnected":[32]}]]],["home-page",[[1,"home-page",{"userName":[32]}]]],["my-component",[[1,"my-component"]]]], options);
 });
 
 //# sourceMappingURL=flyer.esm.js.map
