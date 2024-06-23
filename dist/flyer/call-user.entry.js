@@ -1,4 +1,4 @@
-import { r as registerInstance, h, a as Host } from './index-6c384454.js';
+import { r as registerInstance, h, a as Host } from './index-6c4441dc.js';
 
 class $e8379818650e2442$export$93654d4f2d6cd524 {
     constructor(){
@@ -10346,9 +10346,9 @@ const CallUser = class {
         else if (this.isError) {
             return h("div", null, "There was some error while getting the camera details");
         }
-        return (h(Host, null, "connection Established your username is ", this.userNameProps, h("div", null, this.userNameProps), this.isCallConnected == false ?
+        return (h(Host, null, h("div", null, this.userNameProps), this.isCallConnected == false ?
             this.isCallUser ? h("div", null, h("input", { type: 'text', ref: e => this.callerRef = e }), h("button", { onClick: () => this.callUser() }, "Connect")) :
-                h("div", null, h("button", { onClick: () => this.isCallUser = true }, "Connect with other")) : "", h("div", { class: "flyer-video-container" }, h("video", { class: "flyer-host-video", ref: e => this.myVideo = e, autoPlay: true, controls: true, muted: true, width: 510, height: 510 }), h("video", { class: "flyer-reciever-video", ref: e => this.callerVideo = e, autoplay: true, controls: true, muted: true, width: 510, height: 510 }))));
+                h("div", null, h("button", { onClick: () => this.isCallUser = true }, "Connect with other")) : "", h("div", { class: "flyer-video-container" }, h("video", { class: "flyer-host-video", ref: e => this.myVideo = e, autoPlay: true, muted: true, width: 510, height: 510 }), h("video", { class: "flyer-reciever-video", ref: e => this.callerVideo = e, autoplay: true, width: 510, height: 510 }))));
     }
 };
 CallUser.style = callUserCss;
